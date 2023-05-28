@@ -10,7 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            BucketList()
+            NavigationLink("Face Note View") {
+                FaceNoteView()
+            }
         }
     }
 }

@@ -18,7 +18,6 @@ extension EditView {
         
         @Published var name: String
         @Published var description: String
-        
         @Published private(set) var loadingState = LoadingState.loading
         @Published private(set) var pages = [Page]()
         
