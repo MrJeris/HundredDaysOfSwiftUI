@@ -29,6 +29,7 @@
 		8D26C3FA2A1D0C700073E43E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D26C3F92A1D0C700073E43E /* Location.swift */; };
 		8D26C3FC2A1D1A090073E43E /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D26C3FB2A1D1A090073E43E /* EditView.swift */; };
 		8D2C94C62A1E66D700CC3220 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C94C52A1E66D700CC3220 /* Result.swift */; };
+		8DE2040F2A261604005075E6 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2040E2A261604005075E6 /* LocationFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		8D26C3F92A1D0C700073E43E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		8D26C3FB2A1D1A090073E43E /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		8D2C94C52A1E66D700CC3220 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		8DE2040E2A261604005075E6 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1A4D842A23F3B50092BF31 /* FaceNoteViewModel.swift */,
+				8DE2040E2A261604005075E6 /* LocationFetcher.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			files = (
 				8D2C94C62A1E66D700CC3220 /* Result.swift in Sources */,
 				8D1A4D852A23F3B50092BF31 /* FaceNoteViewModel.swift in Sources */,
+				8DE2040F2A261604005075E6 /* LocationFetcher.swift in Sources */,
 				8D048E7E2A1BC9BD0064B391 /* ContentView.swift in Sources */,
 				8D26C3FC2A1D1A090073E43E /* EditView.swift in Sources */,
 				8D04D04A2A22632F0042CD0E /* AccessibilitySandboxView.swift in Sources */,
@@ -454,7 +458,9 @@
 				DEVELOPMENT_TEAM = Z58TCN89AP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please give access to the camera to use it in the app.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock your places.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Required to get the location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -484,7 +490,9 @@
 				DEVELOPMENT_TEAM = Z58TCN89AP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please give access to the camera to use it in the app.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock your places.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Required to get the location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
