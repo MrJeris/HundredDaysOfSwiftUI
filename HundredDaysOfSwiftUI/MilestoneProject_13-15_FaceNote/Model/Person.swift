@@ -29,7 +29,7 @@ struct Person: Codable, Comparable, Identifiable {
         guard let latitude = latitude else { return nil }
         guard let longitude = longitude else { return nil }
         
-        return .init(latitude: latitude, longitude: longitude)
+        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
     
     static func < (lhs: Person, rhs: Person) -> Bool {
