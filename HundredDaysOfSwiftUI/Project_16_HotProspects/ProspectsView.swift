@@ -14,20 +14,76 @@ struct ProspectsView: View {
         case none, contacted, uncontacted
     }
     
+    enum SortedType {
+        case name, mostRecent
+    }
+    
     @EnvironmentObject var prospects: Prospects
+    
+    @State private var sortType: SortedType = .mostRecent
     @State private var isShowingScanner = false
+    @State private var isShowingConfirmationDialog = false
     
     let filter: FilterType
+    
+    var title: String {
+        switch filter {
+        case .none:
+            return "Everyone"
+        case .contacted:
+            return "Contacted people"
+        case .uncontacted:
+            return "Uncontacted people"
+        }
+    }
+    
+    var filteredProspects: [Prospect] {
+        switch filter {
+        case .none:
+            return prospects.people
+        case .contacted:
+            return prospects.people.filter { $0.isContacted }
+        case .uncontacted:
+            return prospects.people.filter { !$0.isContacted }
+        }
+    }
+    
+    //Challenge #3
+    var sortedProspects: [Prospect] {
+        switch sortType {
+        case .name:
+            return filteredProspects.sorted { $0.name < $1.name }
+        case .mostRecent:
+            return filteredProspects.sorted { $0.dateCreate > $1.dateCreate }
+        }
+    }
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(filteredProspects) { prospect in
-                    VStack(alignment: .leading) {
-                        Text(prospect.name)
-                            .font(.headline)
-                        Text(prospect.emailAddress)
-                            .foregroundColor(.secondary)
+                    HStack {
+                        //Challenge #1
+                        if filter == .none {
+                            if prospect.isContacted {
+                                Image(systemName: "person.crop.circle.badge.checkmark")
+                                    .foregroundColor(.green)
+                                    .font(.largeTitle)
+                                    
+                            } else {
+                                Image(systemName: "person.crop.circle.badge.xmark")
+                                    .foregroundColor(.red)
+                                    .font(.largeTitle)
+                                    
+                            }
+                        }
+                        
+                        VStack(alignment: .leading) {
+                            Text(prospect.name)
+                                .font(.headline)
+                            Text(prospect.emailAddress)
+                                .foregroundColor(.secondary)
+                        }
                     }
                     .swipeActions {
                         if prospect.isContacted {
@@ -57,37 +113,32 @@ struct ProspectsView: View {
             }
             .navigationTitle(title)
             .toolbar {
-                Button {
-                    isShowingScanner = true
-                } label: {
-                    Label("Scan", systemImage: "qrcode.viewfinder")
+                ToolbarItemGroup {
+                    //Challenge #3
+                    Button {
+                        isShowingConfirmationDialog = true
+                    } label: {
+                        Image(systemName: "arrow.up.arrow.down")
+                    }
+                    .confirmationDialog(
+                        "Sort By",
+                        isPresented: $isShowingConfirmationDialog,
+                        titleVisibility: .visible) {
+                            Button("Name") { sortType = .name }
+                            Button("Most Recent") { sortType = .mostRecent }
+                        }
+
+                    
+                    Button {
+                        isShowingScanner = true
+                    } label: {
+                        Label("Scan", systemImage: "qrcode.viewfinder")
+                    }
                 }
             }
             .sheet(isPresented: $isShowingScanner) {
                 CodeScannerView(codeTypes: [.qr], simulatedData: "Paul Hudson\npaul@hacking.com", completion: handleScan)
             }
-        }
-    }
-    
-    var title: String {
-        switch filter {
-        case .none:
-            return "Everyone"
-        case .contacted:
-            return "Contacted people"
-        case .uncontacted:
-            return "Uncontacted people"
-        }
-    }
-    
-    var filteredProspects: [Prospect] {
-        switch filter {
-        case .none:
-            return prospects.people
-        case .contacted:
-            return prospects.people.filter { $0.isContacted }
-        case .uncontacted:
-            return prospects.people.filter { !$0.isContacted }
         }
     }
     
