@@ -23,12 +23,16 @@
 		8D1A4D872A23F6E10092BF31 /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1A4D862A23F6E10092BF31 /* AddPersonView.swift */; };
 		8D1A4D892A23FA090092BF31 /* EmptyImagePlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1A4D882A23FA090092BF31 /* EmptyImagePlaceholder.swift */; };
 		8D1A4D8B2A23FACE0092BF31 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1A4D8A2A23FACE0092BF31 /* PersonDetailView.swift */; };
+		8D1AFBC42A42F5C100D9D1D3 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1AFBC32A42F5C100D9D1D3 /* Card.swift */; };
+		8D1AFBC62A42F74000D9D1D3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1AFBC52A42F74000D9D1D3 /* CardView.swift */; };
 		8D23BF492A1F6897006FE460 /* BucketList-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D23BF482A1F6897006FE460 /* BucketList-ViewModel.swift */; };
 		8D23BF4B2A1F8788006FE460 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D23BF4A2A1F8788006FE460 /* FileManager-DocumentsDirectory.swift */; };
 		8D23BF4D2A1F9B91006FE460 /* EditView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D23BF4C2A1F9B91006FE460 /* EditView-ViewModel.swift */; };
+		8D24DFF22A334CCD00CB622D /* Flashzilla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D24DFF12A334CCD00CB622D /* Flashzilla.swift */; };
 		8D26C3FA2A1D0C700073E43E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D26C3F92A1D0C700073E43E /* Location.swift */; };
 		8D26C3FC2A1D1A090073E43E /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D26C3FB2A1D1A090073E43E /* EditView.swift */; };
 		8D2C94C62A1E66D700CC3220 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C94C52A1E66D700CC3220 /* Result.swift */; };
+		8D49C46E2A4478050080BEA0 /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49C46D2A4478050080BEA0 /* EditCards.swift */; };
 		8D87ADBF2A278DC800680DD2 /* HotProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87ADBE2A278DC800680DD2 /* HotProspectsView.swift */; };
 		8DAF37CA2A30D0BA009DFD17 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF37C92A30D0BA009DFD17 /* ImageSaver.swift */; };
 		8DE2040F2A261604005075E6 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2040E2A261604005075E6 /* LocationFetcher.swift */; };
@@ -56,12 +60,16 @@
 		8D1A4D862A23F6E10092BF31 /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
 		8D1A4D882A23FA090092BF31 /* EmptyImagePlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyImagePlaceholder.swift; sourceTree = "<group>"; };
 		8D1A4D8A2A23FACE0092BF31 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
+		8D1AFBC32A42F5C100D9D1D3 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		8D1AFBC52A42F74000D9D1D3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		8D23BF482A1F6897006FE460 /* BucketList-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BucketList-ViewModel.swift"; sourceTree = "<group>"; };
 		8D23BF4A2A1F8788006FE460 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 		8D23BF4C2A1F9B91006FE460 /* EditView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView-ViewModel.swift"; sourceTree = "<group>"; };
+		8D24DFF12A334CCD00CB622D /* Flashzilla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashzilla.swift; sourceTree = "<group>"; };
 		8D26C3F92A1D0C700073E43E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		8D26C3FB2A1D1A090073E43E /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		8D2C94C52A1E66D700CC3220 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		8D49C46D2A4478050080BEA0 /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 		8D87ADBE2A278DC800680DD2 /* HotProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectsView.swift; sourceTree = "<group>"; };
 		8DAF37C92A30D0BA009DFD17 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		8DE2040E2A261604005075E6 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
@@ -102,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1A4D7C2A23EE470092BF31 /* MilestoneProject_13-15_FaceNote */,
+				8D24DFF02A334CB900CB622D /* Project_17_Flashzilla */,
 				8D87ADBD2A278C5E00680DD2 /* Project_16_HotProspects */,
 				8D04D0482A2263080042CD0E /* Project_15_AccessibilitySandbox */,
 				8D048E892A1BCACE0064B391 /* Project_14_BucketList */,
@@ -249,6 +258,17 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8D24DFF02A334CB900CB622D /* Project_17_Flashzilla */ = {
+			isa = PBXGroup;
+			children = (
+				8D24DFF12A334CCD00CB622D /* Flashzilla.swift */,
+				8D1AFBC32A42F5C100D9D1D3 /* Card.swift */,
+				8D1AFBC52A42F74000D9D1D3 /* CardView.swift */,
+				8D49C46D2A4478050080BEA0 /* EditCards.swift */,
+			);
+			path = Project_17_Flashzilla;
+			sourceTree = "<group>";
+		};
 		8D87ADBD2A278C5E00680DD2 /* Project_16_HotProspects */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,14 +368,17 @@
 				8D1A4D8B2A23FACE0092BF31 /* PersonDetailView.swift in Sources */,
 				8D1A4D872A23F6E10092BF31 /* AddPersonView.swift in Sources */,
 				8DF46FB62A28DEE1004A579F /* MeView.swift in Sources */,
+				8D1AFBC42A42F5C100D9D1D3 /* Card.swift in Sources */,
 				8D048E7C2A1BC9BD0064B391 /* HundredDaysOfSwiftUIApp.swift in Sources */,
 				8D26C3FA2A1D0C700073E43E /* Location.swift in Sources */,
 				8D87ADBF2A278DC800680DD2 /* HotProspectsView.swift in Sources */,
+				8D1AFBC62A42F74000D9D1D3 /* CardView.swift in Sources */,
 				8D04D0522A2272B20042CD0E /* WordScramble_VoiceOver_Fix.swift in Sources */,
 				8D23BF4D2A1F9B91006FE460 /* EditView-ViewModel.swift in Sources */,
 				8D048E9E2A1BD1910064B391 /* BucketList.swift in Sources */,
 				8D1A4D802A23EFB30092BF31 /* FaceNoteView.swift in Sources */,
 				8D04D0502A2271DD0042CD0E /* GuessTheFlag_VoiceOver_Fix.swift in Sources */,
+				8D49C46E2A4478050080BEA0 /* EditCards.swift in Sources */,
 				8D23BF4B2A1F8788006FE460 /* FileManager-DocumentsDirectory.swift in Sources */,
 				8D04D0602A22822A0042CD0E /* ImagePicker.swift in Sources */,
 				8D1A4D832A23F2D80092BF31 /* Person.swift in Sources */,
@@ -363,6 +386,7 @@
 				8DAF37CA2A30D0BA009DFD17 /* ImageSaver.swift in Sources */,
 				8DF46FB42A28DED7004A579F /* ProspectsView.swift in Sources */,
 				8D1A4D892A23FA090092BF31 /* EmptyImagePlaceholder.swift in Sources */,
+				8D24DFF22A334CCD00CB622D /* Flashzilla.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
